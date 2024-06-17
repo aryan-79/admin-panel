@@ -6,6 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -14,9 +15,11 @@ body {
 
 /* administrator */
 .administrator {
+  font-weight: 400;
+  font-size: 1.5rem;
   text-align: center;
-  width: 15%;
-  padding: 30px 30px;
+  width: 25%;
+  padding: 8px;
 }
 
 .navigation {
@@ -32,7 +35,7 @@ body {
 
 .logoutButton {
   margin-bottom: 30px;
-  padding: 4px 40px;
+  padding: 12px 40px;
   background-color: skyblue;
   border-style: none;
   cursor: pointer;
@@ -43,6 +46,8 @@ body {
 .logoutButton a {
   color: black;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .logoutButton:hover {
@@ -51,20 +56,26 @@ body {
 
 /* sidebar */
 
-.nav {
+.nav ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 70px;
-  gap: 15px;
-  width: 5%;
-  margin-left: 85px;
-  padding: 20px;
+  gap: 4rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem 0 2rem 0.5rem;
+  /* margin-left: 2rem; */
+  /* padding: 20px; */
   text-align: start;
 }
 
 .nav ul li {
-  display: inline-block;
+  padding: 0 1rem;
+  width: 75%;
+  display: flex;
+  gap: 0.5rem;
+  height: 2rem;
   list-style: none;
 }
 
@@ -84,72 +95,72 @@ article {
   background-color: teal;
 }
 
-.manageDoctor button {
-  gap: 30px;
-  margin-left: 15px;
-  margin-top: 40px;
-  height: 4vh;
-  width: 6vw;
-  cursor: pointer;
-  background-color: teal;
-  border-radius: 5px;
-  border-style: none;
+.manageDoctor a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.manageDoctor button:hover {
-  background-color: skyblue;
+.manageDoctor a:hover {
+  color: rgb(110, 184, 184);
 }
-
-.manageDoctor button a {
+/* .manageDoctor a {
   color: black;
   text-decoration: none;
+} */
+.manageDoctor h3 {
+  margin: auto;
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: teal;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-article h3 {
-  padding: 40px 122px;
-}
-
-.addDoctor {
+/* .addDoctor {
   margin-top: -30px;
   padding: 50px;
-}
+} */
 
-form {
-  margin-bottom: 20px;
-}
-
-form h3 {
-  margin-top: -2%;
-  margin-left: 32%;
-  margin-bottom: -4%;
+.addDoctor h3 {
+  text-align: center;
+  margin: 4rem 0;
 }
 
 form label {
   display: block;
-  margin: 10px 0 5px;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 form input {
   padding: 10px;
-  width: 97.5%;
-  margin-bottom: 10px;
+  width: 90%;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
 }
 
 form button {
+  margin-left: 1rem;
   margin-bottom: 30px;
-  padding: 10px 0;
-  width: 100%;
+  padding: 10px;
+  width: 92%;
   background-color: skyblue;
   border-style: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
   text-wrap: nowrap;
-}
-
-form button a {
-  color: black;
-  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 form button:hover {
@@ -157,14 +168,12 @@ form button:hover {
 }
 
 .listDoctor h3 {
-  margin-top: -5%;
-  margin-left: 32%;
+  margin: 4rem auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
 }
 
 table,

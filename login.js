@@ -21,8 +21,6 @@ inputPassword.addEventListener("change", (event) => {
 });
 submit.addEventListener("click", (event) => {
   event.preventDefault();
-  //   console.log("submit clicked");
-  //   console.log({ email: email, password: password });
 
   // matching admin credentials
   if (email === creds.email && password === creds.password) {

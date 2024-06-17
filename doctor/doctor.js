@@ -41,6 +41,7 @@ submit.addEventListener("click", (event) => {
 });
 // then
 // get actual data from db
+
 const doctors = [
   {
     name: "doctor 1",

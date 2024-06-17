@@ -14,9 +14,11 @@ body {
 
 /* administrator */
 .administrator {
+  font-weight: 400;
+  font-size: 1.5rem;
   text-align: center;
-  width: 15%;
-  padding: 30px 30px;
+  width: 25%;
+  padding: 8px;
 }
 
 .navigation {
@@ -32,7 +34,7 @@ body {
 
 .logoutButton {
   margin-bottom: 30px;
-  padding: 4px 40px;
+  padding: 12px 40px;
   background-color: skyblue;
   border-style: none;
   border-radius: 5px;
@@ -43,6 +45,8 @@ body {
 .logoutButton a {
   color: black;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .logoutButton:hover {
@@ -51,20 +55,26 @@ body {
 
 /* sidebar */
 
-.nav {
+.nav ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 70px;
-  gap: 15px;
-  width: 5%;
-  margin-left: 85px;
-  padding: 20px;
+  gap: 4rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem 0 2rem 0.5rem;
+  /* margin-left: 2rem; */
+  /* padding: 20px; */
   text-align: start;
 }
 
 .nav ul li {
-  display: inline-block;
+  padding: 0 1rem;
+  width: 75%;
+  display: flex;
+  gap: 0.5rem;
+  height: 2rem;
   list-style: none;
 }
 
@@ -82,16 +92,27 @@ article {
 
 .Dashboard {
   background-color: teal;
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article h3 {
-  padding: 40px 220px;
+  font-size: 2rem;
+  text-wrap: nowrap;
 }
 
 .total {
+  /* height: calc(100vh - 12rem); */
+  width: 99%;
   display: flex;
+  gap: 6rem;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: nowrap;
   margin-top: 50px;
-  gap: 50px;
 }
 
 .Doctor,
@@ -99,16 +120,23 @@ article h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 1rem;
   height: 20vh;
-  width: 35.5vw;
+  width: 40%;
+  font-size: 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Doctor h1,
+.Patient h1 {
+  text-wrap: nowrap;
+  font-size: 2rem;
 }
 
 .Doctor span,
 .Patient span {
   height: 7vh;
-  width: 10vw;
+  width: 6rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -117,4 +145,15 @@ article h3 {
 .Patient span p {
   margin-top: 1rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .total {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Doctor,
+  .Patient {
+    width: 60%;
+  }
 }

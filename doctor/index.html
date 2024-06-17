@@ -29,34 +29,35 @@
           </div>
         </div>
         <div class="nav">
-          <div>
-            <i class="fa-solid fa-chart-line"></i>
-            <i class="fa-solid fa-notes-medical"></i>
-            <i class="fa-solid fa-hospital-user"></i>
-          </div>
-          <div>
-            <ul>
-              <li><a href="/dashboard">Dashboard</a></li>
-              <li><a href="/doctor">Doctor</a></li>
-              <li><a href="/patient">Patient</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <i class="fa-solid fa-chart-line"></i>
+              <a href="/dashboard">Dashboard</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-notes-medical"></i
+              ><a href="/doctor">Doctor</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-hospital-user"></i
+              ><a href="/patient">Patient</a>
+            </li>
+          </ul>
         </div>
       </div>
 
       <article>
         <div class="manageDoctor">
-          <button>
-            <i class="fa-solid fa-arrow-left"
-              >&nbsp; &nbsp;<a href="/dashboard">Back</a></i
-            >
-          </button>
+          <a href="/dashboard">
+            <i class="fa-solid fa-arrow-left">&nbsp; &nbsp;</i>
+            <p>Back</p>
+          </a>
           <h3>Manage Doctors</h3>
         </div>
 
         <div class="addDoctor">
+          <h3>Add Doctor</h3>
           <form id="add-doctor-form">
-            <h3>Add Doctor</h3>
             <label for="doctor-name">Name:</label>
             <input type="text" id="doctor-name" name="doctor-name" required />
 
